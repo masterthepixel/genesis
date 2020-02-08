@@ -17,83 +17,257 @@
   <title>J. Isaac Project Management</title>
 
   <link rel="stylesheet" href="/build/tailwind.css">
+  <script type='text/javascript' src='../script.js.'></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+
   <link href="https://unpkg.com/aos@2.3.3/dist/aos.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/2d785038d2.js" crossorigin="anonymous"></script>
-  <script>
-    // Picture element HTML5 shiv https://scottjehl.github.io/picturefill/
-    document.createElement("picture");
-  </script>
-  <script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.js" async></script>
+
 </head>
 
 
-<!-- Scroll Magic Area Hero Area  -->
-
-<main>
-  <section class="sm-section">
-    <div class="sm-section__left"></div>
-    <div class="sm-section__right">
-      <sm-article data-scrollmagic>
-        <h3 class="pb-2 text-4xl font-bold leading-tight tracking-tight">Step 1: Project Conception and Initiation
-        </h3>
-        <p class="text-lg leading-tight tracking-wide">If not for the courage of the fearless crew the Minnow would be
-          lost. the
-          Minnow
-          would be
-          lost? The Brady
-          Bunch the Brady Bunch that's the way we all became the Brady Bunch.</p>
-      </sm-article>
-    </div>
-  </section>
-  <section class="sm-section">
-    <div class="sm-section__left">
-      <sm-article data-scrollmagic>
-        <h3>Its mission — to explore strange new worlds to seek out new life</h3>
-        <p>In a freak mishap Ranger 3 and its pilot Captain William Buck Rogers are blown out of their trajectory into
-          an orbit which freezes his life support systems and returns Buck Rogers to Earth five-hundred years later.
-        </p>
-      </sm-article>
-    </div>
-    <div class="sm-section__right"></div>
-  </section>
-  <section class="sm-section">
-    <div class="sm-section__left"></div>
-    <div class="sm-section__right">
-      <sm-article data-scrollmagic>
-        <h3>The weather started getting rough — the tiny ship was tossed.</h3>
-        <p>If not for the courage of the fearless crew the Minnow would be lost. the Minnow would be lost? The Brady
-          Bunch the Brady Bunch that's the way we all became the Brady Bunch.</p>
-        <a href="#" class="sm-btn sm-btn--ghost">Lorem</a>
-      </sm-article>
-    </div>
-  </section>
-</main>
-<!-- /End of Scroll Magic Area Hero Area  -->
-
-
-<script src="https://unpkg.com/popper.js@1/dist/umd/popper.min.js"></script>
-<script src="https://unpkg.com/tippy.js@4"></script>
-<script>
-  //Init tooltips
-  tippy('.link', {
-    placement: 'bottom'
-  })
 
 
 
 
+<body id="page-top" class="antialiased leading-normal bg-gray-200 ">
+
+  <script>
+
+    //Toggle mode
+    const toggle = document.querySelector('.js-change-theme');
+    const body = document.querySelector('body');
+    const profile = document.getElementById('profile');
 
 
-    < !--Plugin JavaScript-- >
-      <script src="vendor/jquery/jquery.min.js"></script>
-<script src="https://unpkg.com/aos@2.3.3/dist/aos.js"></script>
-<script src="js/main.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
-<script src="js/gsap/gsap.js"></script>
+    toggle.addEventListener('click', () => {
 
-<script>
-        AOS.init();
-</script>
-</body>
+      if (body.classList.contains('text-gray-900')) {
+        toggle.innerHTML = "☀️";
+        body.classList.remove('text-gray-900');
+        body.classList.add('text-gray-100');
+        profile.classList.remove('bg-white');
+        profile.classList.add('bg-gray-900');
+      } else {
+        toggle.innerHTML = "🌙";
+        body.classList.remove('text-gray-100');
+        body.classList.add('text-gray-900');
+        profile.classList.remove('bg-gray-900');
+        profile.classList.add('bg-white');
+
+      }
+    });
+
+  </script>
+
+  <body style="position: relative;">
+
+
+    <!-- Navigation Area  -->
+
+    <header class="w-full " data-aos=" zoom-in" data-aos-duration="1000">
+      <!--Light Mode Nav - Text and Icons -->
+      <!-- Left Side Navigation Area --->
+
+      <div class="p-2 font-medium text-gray-900 capitalize bg-white shadow-lg">
+        <span class="px-2 mr-2 border-r border-gray-800">
+          <img src="../img/logo.png" alt="J. Isaac Project Management and Business Consultancy"
+            class="inline h-10 mx-auto -mt-1">
+        </span>
+        <span class="px-2 py-1 mb-5 text-sm rounded cursor-pointer hover:bg-gray-200 hover:text-gray-700">
+
+          <a href="/"><i class="w-8 p-2 bg-gray-200 rounded-full fas fa-home" aria-hidden="true"></i>
+            <span class="mx-1">Residential</span></a>
+        </span>
+        <span class="px-2 py-1 mb-5 text-sm rounded cursor-pointer hover:bg-gray-200 hover:text-gray-700">
+          <a href="/commercial.html"><i class="w-8 p-2 bg-gray-200 rounded-full fas fa-hotel" aria-hidden="true"></i>
+            <span class="mx-1">Commercial</span></a>
+        </span>
+
+
+
+
+        <!-- Right Side Navigation Area --->
+
+
+      </div>
+    </header>
+    <!-- /End of Navigation Area  -->
+
+    <!-- Scroll Magic Area  -->
+    <section>
+      <div class="flex flex-row flex-wrap items-center content-center h-screen text-left bg-top bg-cover"
+        style="background-image: url(./img/jipbm_residential_construction_project_management_0002.jpg)">
+        <article data-scrollmagic
+          class="float-left pl-8 pr-8 text-left text-white xs:w-5/6 sm:w-5/6 md:w-7/12 xl:w-7/12 text-shadow">
+          <h1 data-aos="slide-down" data-aos-duration="1000" class="mb-2 text-5xl font-semibold leading-none">
+            Foresight in
+            Experience </h1>
+          <p data-aos="slide-up" data-aos-duration="1000" class="text-lg font-semibold tracking-wide ">J. Isaac serves
+            our
+            customers by providing construction owner
+            representation, professional
+            management and
+            consulting services. We manage construction and real estate development projects in and around Washington,
+            DC.
+          </p>
+        </article>
+      </div>
+    </section>
+    <!-- Scroll Magic Area Step 1 -->
+    <section>
+      <div class="flex flex-row-reverse flex-wrap items-center content-center h-screen text-right bg-top bg-cover"
+        style="background-image: url(./img/jipbm_residential_construction_project_management_0010.jpg)">
+        <article data-scrollmagic
+          class="float-right py-4 pl-4 pr-4 text-right xs:w-5/6 sm:w-5/6 md:w-7/12 xl:w-5/12 text-shadow transform -translate-y-1/2 -translate-x-4">
+          <h3 data-aos="slide-down" data-aos-duration="1000" class="mb-2 text-4xl font-semibold leading-none">
+            Step 1: Initiation phase</h3>
+          <p data-aos="slide-up" data-aos-duration="1000" class="text-lg font-medium tracking-wide ">The initiation
+            phase
+            is the beginning of the project. In this
+            phase, the idea for the project is explored and elaborated. The goal of this phase is to examine the
+            feasibility of the project.
+          </p>
+        </article>
+      </div>
+    </section>
+    <!-- Scroll Magic Area Step 2 -->
+    <section>
+      <div class="flex flex-row flex-wrap items-center content-center h-screen text-left bg-top bg-cover"
+        style="background-image: url(./img/jipbm_residential_construction_project_management_0005.jpg)">
+        <article data-scrollmagic
+          class="float-left pl-8 pr-8 text-left text-white xs:w-5/6 sm:w-5/6 md:w-7/12 xl:w-7/12 text-shadow">
+          <h1 data-aos="slide-down" data-aos-duration="1000" class="mb-2 text-4xl font-semibold leading-none">
+            Step 2:</h1>
+          <p data-aos="slide-up" data-aos-duration="1000" class="text-lg font-semibold tracking-wide ">J. Isaac serves
+            our customers by providing construction owner
+            representation, professional
+            management and
+            consulting services. We manage construction and real estate development projects in and around Washington,
+            DC.
+          </p>
+        </article>
+      </div>
+    </section>
+    <!-- Scroll Magic Area Step 3 -->
+    <section>
+      <div class="flex flex-row-reverse flex-wrap items-center content-center h-screen text-right bg-top bg-cover"
+        style="background-image: url(./img/jipbm_residential_construction_project_management_0014.jpg)">
+        <article data-scrollmagic
+          class="float-right py-4 pl-4 pr-4 text-right xs:w-5/6 sm:w-5/6 md:w-7/12 xl:w-5/12 text-shadow transform -translate-y-1/2 -translate-x-4">
+          <h3 data-aos="slide-down" data-aos-duration="1000" class="mb-2 text-4xl font-semibold leading-none">
+            Step 3:</h3>
+          <p data-aos="slide-up" data-aos-duration="1000" class="text-lg font-medium tracking-wide ">The initiation
+            phase
+            is the beginning of the project. In this
+            phase, the idea for the project is explored and elaborated. The goal of this phase is to examine the
+            feasibility of the project.
+          </p>
+        </article>
+      </div>
+    </section>
+    <!-- Scroll Magic Area Step 4 -->
+    <section>
+      <div class="flex flex-row flex-wrap items-center content-center h-screen text-left bg-top bg-cover"
+        style="background-image: url(./img/jipbm_residential_construction_project_management_0018.jpg)">
+        <article data-scrollmagic
+          class="float-left pl-8 pr-8 text-left text-white xs:w-5/6 sm:w-5/6 md:w-7/12 xl:w-7/12 text-shadow">
+          <h1 data-aos="slide-down" data-aos-duration="1000" class="mb-2 text-4xl font-semibold leading-none">
+            Step 4:</h1>
+          <p data-aos="slide-up" data-aos-duration="1000" class="text-lg font-semibold tracking-wide ">J. Isaac serves
+            our customers by providing construction owner
+            representation, professional
+            management and
+            consulting services. We manage construction and real estate development projects in and around Washington,
+            DC.
+          </p>
+        </article>
+      </div>
+    </section>
+    <!-- Scroll Magic Area Step 5 -->
+    <section>
+      <div class="flex flex-row-reverse flex-wrap items-center content-center h-screen text-right bg-top bg-cover"
+        style="background-image: url(./img/jipbm_residential_construction_project_management_0025.jpg)">
+        <article data-scrollmagic
+          class="float-right py-4 pl-4 pr-4 text-right xs:w-5/6 sm:w-5/6 md:w-7/12 xl:w-5/12 text-shadow transform -translate-y-1/2 -translate-x-4">
+          <h3 data-aos="slide-down" data-aos-duration="1000" class="mb-2 text-4xl font-semibold leading-none">
+            Step 5:</h3>
+          <p data-aos="slide-up" data-aos-duration="1000" class="text-lg font-medium tracking-wide ">The initiation
+            phase
+            is the beginning of the project. In this
+            phase, the idea for the project is explored and elaborated. The goal of this phase is to examine the
+            feasibility of the project.
+          </p>
+        </article>
+      </div>
+    </section>
+    <!-- Scroll Magic Area Step 6 -->
+    <section>
+      <div class="flex flex-row flex-wrap items-center content-center h-screen text-left bg-top bg-cover"
+        style="background-image: url(./img/jipbm_residential_construction_project_management_0003.jpg)">
+        <article data-scrollmagic
+          class="float-left pl-8 pr-8 text-left text-white xs:w-5/6 sm:w-5/6 md:w-7/12 xl:w-7/12 text-shadow">
+          <h1 data-aos="slide-down" data-aos-duration="1000" class="mb-2 text-4xl font-semibold leading-none">
+            Step 6: Project Closing</h1>
+          <p data-aos="slide-up" data-aos-duration="1000" class="text-lg font-semibold tracking-wide ">J. Isaac serves
+            our customers by providing construction owner
+            representation, professional
+            management and
+            consulting services. We manage construction and real estate development projects in and around Washington,
+            DC.
+          </p>
+        </article>
+      </div>
+    </section>
+    <!-- /Scroll Magic Area  -->
+
+
+
+
+
+    Initiation phase
+    Definition phase
+    Design phase
+    Development phase
+    Implementation phase
+    Follow-up phase
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/popper.js@1/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@4"></script>
+    <script>
+      //Init tooltips
+      tippy('.link', {
+        placement: 'bottom'
+      })
+    </script>
+
+
+
+
+
+
+    <!--Plugin JavaScript-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.3/dist/aos.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+    <script src="js/gsap/gsap.js"></script>
+    <script src="https://use.typekit.net/spd0sdw.js"></script>
+    <script>AOS.init();</script>
+  </body>
 
 </html>
