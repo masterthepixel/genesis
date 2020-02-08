@@ -9,19 +9,19 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,600,700,800,900&display=swap');
 
 .text-shadow {
-    text-shadow:
-        0 0 5px #fff,
-        0 0 6px #fff,
-        0 0 7px #fff,
-        0 0 8px #fff,
-        0 0 9px #cacaca,
-        0 0 10px #000,
-        0 0 10px #1b1b1b,
-        0 0 11px #4b4b4b,
-        0 0 12px #444444,
-        0 0 13px #1b1b1b,
-        0 0 14px #222222,
-        0 0 15px #111111,
+  text-shadow:
+    0 0 5px #fff,
+    0 0 6px #fff,
+    0 0 7px #fff,
+    0 0 8px #fff,
+    0 0 9px #cacaca,
+    0 0 10px #000,
+    0 0 10px #1b1b1b,
+    0 0 11px #4b4b4b,
+    0 0 12px #444444,
+    0 0 13px #1b1b1b,
+    0 0 14px #222222,
+    0 0 15px #111111,
 }
 
 
@@ -32,135 +32,175 @@
 
 
 
-    .sm-flex,
-    sm-header,
-    .sm-section {
-        display: -webkit-box;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        flex-flow: row wrap;
-        -webkit-box-align: center;
-        align-items: center;
-        -webkit-box-pack: center;
-        justify-content: center;
-    }
+@import "susy";
+@import "compass/css3";
 
-    sm-header {
-        width: 100vw;
-        min-height: 400px;
-        height: 100vh;
-        background: #03293c;
-        color: white;
-        font-weight: bold;
-        text-align: left;
-    }
+//Google web fonts
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
-    sm-header article {
-        padding-left: 8.33333%;
-        padding-right: 50%;
-        width: 41.66667%;
-        float: left;
-        text-align: left;
-    }
+#open_sans {
+	font-family: 'Open Sans';
+  /* font-weight: 700; */
+}
+#merriweather {
+  font-family: 'Merriweather', serif;
+}
 
-    sm-header article h1 {
-        font-size: 9rem;
-        margin: 0 0 2.5rem;
-        line-height: 1em;
-    }
+$susy: (
+  flow: ltr, // ltr | rtl
+  output: float, // float | isolate
+  math: fluid, // fluid | static (requires column-width)
+  container: auto, // length or % | auto
+  container-position: center, // left | center | right | <length> [*2] (grid padding)
+  last-flow: to,
+  columns: 24,
+  gutters: 0,
+  gutter-position: inside, // before | after | split | inside | inside-static (requires column-width)
+  global-box-sizing: border-box, // content-box | border-box (affects inside/inside-static)
+  use-custom: (
+    box-sizing: true,
+    clearfix: true,
+    rem: true,
+  )
+);
 
-    sm-header article p {
-        font-size: 2rem;
-    }
 
-    .sm-btn {
-        padding: 1rem 2rem;
-        display: inline-block;
-        text-decoration: none;
-        -webkit-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
-        font-size: 2rem;
-    }
 
-    .sm-btn--ghost {
-        background: transparent;
-        color: white;
-        border: 1px solid #dfdfdf;
-    }
 
-    .sm-btn--ghost:hover {
-        background: white;
-        color: black;
-    }
 
-    .sm-section {
-        width: 100vw;
-        min-height: 400px;
-        height: 100vh;
-        color: white;
-        padding-left: 16.66667%;
-        padding-right: 16.66667%;
-        box-sizing: border-box;
-        position: relative;
-    }
+.sm-flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;  
+  
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+ 
+  align-items: center;
+  justify-content: center;
+}
 
-    .sm-section:before {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        top: 50%;
-        -webkit-transform: translateY(-50%);
-        transform: translateY(-50%);
-        content: "";
-        font-size: 25.5rem;
-        color: rgba(255, 255, 255, 0.05);
-    }
+sm-header {
+  width: 100vw;
+  min-height: 400px;
+  height: 100vh;
+  background: #03293c;
+  color: white;
+  
+  font-weight: bold;
+  text-align: left;
+  
+  @extend .sm-flex;
+  
+  sm-article {
+    @include pad(2 of 24, 12 of 24);
+    @include span(10 of 24);
+    text-align: left;
 
-    .sm-section:nth-child(1) {
-        background: #f44e57;
-    }
+  }
+}
 
-    .sm-section:nth-child(1):before {
-        content: "Chapter 01";
+.sm-btn {
+  padding: 1rem 2rem;
+  display: inline-block;
+  text-decoration: none;
+  @include transition(all 0.3s ease-in-out);
+  font-size: 2rem;
+  
+  &--ghost {
+    background: transparent;
+    color: white;
+    border: 1px solid rgba(223,223,223,1);
+    
+    &:hover {
+      background: rgba(255,255,255,1);
+      color: black;
     }
+  }
+}
 
-    .sm-section:nth-child(2) {
-        background: #1c2d35;
+.sm-section {
+  width: 100vw;
+  min-height: 400px;
+  height: 100vh;
+  @extend .flex;
+  color: white;
+  @include pad(4 of 24);
+  @include box-sizing();
+  position: relative;
+  
+  &:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    content:"";
+    font-size: 25.5rem;
+    color: rgba(255,255,255,0.05);
+  }
+  
+  &:nth-child(1) {
+    background: #f44e57;
+    
+    &:before {
+      content:"Step 1";
     }
+  }
+  
+  &:nth-child(2) {
+    background: #1c2d35;
+    
+    &:before {
+      content:"Step 2";
+    }
+  }
+  
+  &:nth-child(3) {
+    background: #686860;
+    
+    &:before {
+      content:"Step 3";
+    }
+  }
+  
+  &:nth-child(4) {
+    background: #006faf;
+    
+    &:before {
+      content:"Step 4";
+    }
+  }
 
-    .sm-section:nth-child(2):before {
-        content: "Chapter 02";
+  &:nth-child(5) {
+    background: #838300;
+    
+    &:before {
+      content:"Step 5";
     }
+  }
 
-    .sm-section:nth-child(3) {
-        background: #686860;
+  &:nth-child(6) {
+    background: #886860;
+    
+    &:before {
+      content:"Step 6";
     }
-
-    .sm-section:nth-child(3):before {
-        content: "Chapter 03";
-    }
-
-    .sm-section__left {
-        width: 50%;
-        float: left;
-    }
-
-    .sm-section__right {
-        width: 50%;
-        float: left;
-    }
-
-    .sm-section article {
-        text-align: left;
-    }
-
-    .section article h3 {
-        font-size: 4.1rem;
-    }
-
-    .sm-section article p {
-        font-size: 2rem;
-        margin-bottom: 2rem;
-    }
+  }
+  &__left {
+    @include span(12 of 24);
+  }
+  
+  &__right {
+    @include span(12 of 24);
+  }
+  
+  sm-article {
+    text-align: left;
+    
+  }
+}
