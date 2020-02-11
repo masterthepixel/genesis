@@ -18,14 +18,10 @@
   <!-- Compiled TailWindCSS -->
   <link rel="stylesheet" href="/build/tailwind.css">
 
-  <!-- CDN Link to Swiper's CSS -->
+  <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 
-  <style>
-    #menu-toggle:checked+#menu {
-      display: block;
-    }
-  </style>
+
 
 
 
@@ -36,219 +32,247 @@
 
 
 
-<body id="page-top" class="antialiased font-light leading-normal bg-gray-200 " style="position: relative;">
+<body id="page-top" class="antialiased bg-gray-400 ">
 
 
 
 
 
   <!-- Navigation Area  -->
+  <header class="w-full" data-aos="zoom-in" data-aos-duration="600">
+    <!--Light Mode Nav - Text and Icons -->
+    <!-- Left Side Navigation Area --->
 
-  <nav class="relative flex flex-wrap items-center justify-between px-2 py-3 bg-white-500 navbar-expand-lg">
-    <div class="container flex flex-wrap items-center justify-between px-4 mx-auto">
-      <div class="relative flex justify-between w-full px-4 lg:w-auto lg:static lg:block lg:justify-start">
-        <a class="inline-block py-2 mr-4 text-sm font-bold leading-relaxed text-black uppercase whitespace-no-wrap"
-          href="#pablo">
-          J. Isaac Project Management
-        </a>
-        <button
-          class="block px-3 py-1 text-xl leading-none text-white bg-transparent border border-transparent border-solid rounded outline-none cursor-pointer lg:hidden focus:outline-none"
-          type="button" onclick="toggleNavbar('example-collapse-navbar')">
-          <i class="fas fa-bars"></i>
-        </button>
-      </div>
-      <div class="items-center flex-grow hidden lg:flex" id="example-collapse-navbar">
-        <ul class="flex flex-col list-none lg:flex-row lg:ml-auto">
-          <li class="nav-item">
-            <a class="flex items-center px-3 py-2 text-xs font-bold leading-snug text-black uppercase hover:opacity-75"
-              href="#pablo">
-              <i class="text-lg text-white opacity-75 fab fa-facebook-square leading-lg"></i><span
-                class="ml-2">Residential</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="flex items-center px-3 py-2 text-xs font-bold leading-snug text-black uppercase hover:opacity-75"
-              href="#pablo">
-              <i class="text-lg text-white opacity-75 fab fa-twitter leading-lg"></i><span
-                class="ml-2">Commerical</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="flex items-center px-3 py-2 text-xs font-bold leading-snug text-black uppercase hover:opacity-75"
-              href="#pablo">
-              <i class="text-lg text-white opacity-75 fab fa-pinterest leading-lg"></i><span class="ml-2">Contact
-                Us</span>
-            </a>
-          </li>
-        </ul>
-      </div>
+    <div class="p-2 font-medium text-gray-900 capitalize bg-white shadow-lg">
+      <span class="px-2 mr-2 border-r border-gray-800">
+        <img src="../img/logo.png" alt="J. Isaac Project Management and Business Consultancy"
+          class="inline h-10 mx-auto -mt-1">
+      </span>
+      <span class="px-2 py-1 mb-5 text-sm rounded cursor-pointer hover:bg-gray-200 hover:text-gray-700">
+
+        <a href="/"><i class="w-8 p-2 bg-gray-200 rounded-full fas fa-home" aria-hidden="true"></i>
+          <span class="mx-1">Residential</span></a>
+      </span>
+      <span class="px-2 py-1 mb-5 text-sm rounded cursor-pointer hover:bg-gray-200 hover:text-gray-700">
+        <a href="/commercial.html"><i class="w-8 p-2 bg-gray-200 rounded-full fas fa-hotel" aria-hidden="true"></i>
+          <span class="mx-1">Commercial</span></a>
+      </span>
+
+
+
+
+      <!-- Right Side Navigation Area --->
+      <span
+        class="relative float-right w-10 mr-3 text-blue-900 cursor-pointer sm:invisible md:visible lg:visible xl:visible hover:text-blue-400">
+        <a href="mailto:info@jibpm.com"><i class="w-8 p-2 bg-gray-200 rounded-full fas fa-comments"
+            aria-hidden="true"></i></a>
+        </i>
+      </span>
+      <span
+        class="relative float-right w-10 mr-3 text-blue-900 cursor-pointer sm:invisible md:visible lg:visible xl:visible hover:text-blue-400">
+        <a href="mailto:info@jibpm.com"><i class="w-8 p-2 bg-gray-200 rounded-full fas fa-envelope"
+            aria-hidden="true"></i></a>
+        </i>
+      </span>
+      <span
+        class="relative float-right w-10 mr-3 text-blue-900 cursor-pointer sm:invisible md:visible lg:visible xl:visible hover:text-blue-400">
+        <a href="tel:+13017603300"><i class="w-8 p-2 bg-gray-200 rounded-full fas fa-phone" aria-hidden="true"></i></a>
+        </i>
+      </span>
     </div>
-  </nav>
-  <script>
-    function toggleNavbar(collapseID) {
-      document.getElementById(collapseID).classList.toggle("hidden");
-      document.getElementById(collapseID).classList.toggle("flex");
-    }
-  </script>
-
-
-
-
+  </header>
   <!-- /End of Navigation Area  -->
 
 
 
 
 
-  <!-- Swiper.JS Area  -->
+
+
+
+
+
+
+  <!-- Hero Area  -->
+
+  <section class="h-screen bg-cover " style="background-image:url('../img/hero.jpg')">
+    <div class="">
+
+      <img width="200px" src="../img/header-logo-white-text.svg"
+        class="transform translate-x-4 translate-y-1/2 float left ">
+      <div class="transform translate-x-4 translate-y-1/2 float left">
+        <h2
+          class="w-11/12 pb-2 text-2xl font-extrabold leading-tight tracking-tight text-white text-shadow lg:text-5xl">
+          Foresight
+          in <span class="text-orange-600 text-shadow ">Experience</span>
+        </h2>
+        <p
+          class="inline-block w-11/12 text-lg font-normal leading-tight text-white text-shadow lg:text-2xl lg:w-7/12 xl:w-7/12">
+          J.
+          Isaac serves
+          our
+          customers by providing
+          construction
+          owner
+          representation,
+          professional management and consulting services. We manage construction and real
+          estate development
+          projects in and around Washington, DC. <div class="mt-4">
+            <a href="#"
+              class="inline-block px-6 py-4 mt-4 text-sm font-medium font-semibold leading-none tracking-wider text-white no-underline bg-orange-600 border border-white rounded rounded-lg shadow-lg focus:border-blue-900 hover:border-yellow-900 hover:bg-blue-900 lg:mt-0 hover:bg-indigo-400 active:bg-blue-100 focus:shadow-2xl sm:text-base">Let's
+              get started.</a>
+          </div>
+        </p>
+      </div>
+
+
+
+
+    </div>
+
+  </section>
+  <!-- /End of Hero Area  -->
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Project Management Pitch Area  -->
+
   <!-- Swiper -->
-  <!-- Scroll Magic Area  -->
-  <div class="h-screen swiper-container">
+
+  <div class="swiper-container">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <!-- Scroll Magic Area Step 1 -->
-        <section>
-          <div class="flex flex-row-reverse flex-wrap items-center content-center h-screen text-right bg-top bg-cover"
-            style="background-image: url(./img/jipbm_residential_construction_project_management_0010.jpg)">
-            <article
-              class="float-right py-4 pl-4 pr-4 text-right transform -translate-x-4 -translate-y-1/2 xs:w-5/6 sm:w-5/6 md:w-7/12 xl:w-5/12 text-shadow">
-              <h3 class="mb-2 text-4xl font-semibold leading-none">
-                Step 1: Initiation phase</h3>
-              <p class="text-lg font-medium tracking-wide ">The
-                initiation
-                phase
-                is the beginning of the project. In this
-                phase, the idea for the project is explored and elaborated. The goal of this phase is to examine the
-                feasibility of the project.
-              </p>
-            </article>
-          </div>
-        </section>
+        <!-- Step 1 -->
+        <div class="flex flex-row-reverse flex-wrap items-center content-center h-screen text-right bg-top bg-cover"
+          style="background-image: url(./img/jipbm_residential_construction_project_management_0010.jpg)">
+          <article
+            class="float-right py-4 pl-4 pr-4 text-right transform -translate-x-4 -translate-y-1/2 xs:w-5/6 sm:w-5/6 md:w-7/12 xl:w-5/12 text-shadow">
+            <h3 class="mb-2 text-4xl font-semibold leading-none">
+              Step 1: Initiation phase</h3>
+            <p class="text-lg font-medium tracking-wide ">The
+              initiation
+              phase
+              is the beginning of the project. In this
+              phase, the idea for the project is explored and elaborated. The goal of this phase is to examine the
+              feasibility of the project.
+            </p>
+          </article>
+        </div>
       </div>
       <div class="swiper-slide">
-        <!-- Scroll Magic Area Step 2 -->
-        <section>
-          <div class="flex flex-row flex-wrap items-center content-center h-screen text-left bg-top bg-cover"
-            style="background-image: url(./img/jipbm_residential_construction_project_management_0005.jpg)">
-            <article
-              class="float-left pl-8 pr-8 text-left text-white xs:w-5/6 sm:w-5/6 md:w-7/12 xl:w-7/12 text-shadow">
-              <h1 class="mb-2 text-4xl font-semibold leading-none">
-                Step 2:</h1>
-              <p class="text-lg font-semibold tracking-wide ">J. Isaac
-                serves
-                our customers by providing construction owner
-                representation, professional
-                management and
-                consulting services. We manage construction and real estate development project in and around
-                Washington,
-                DC.
-              </p>
-            </article>
-          </div>
-        </section>
+        <!-- Step 2 -->
+        <div class="flex flex-row flex-wrap items-center content-center h-screen text-left bg-top bg-cover"
+          style="background-image: url(./img/jipbm_residential_construction_project_management_0005.jpg)">
+          <article class="float-left pl-8 pr-8 text-left text-white xs:w-5/6 sm:w-5/6 md:w-7/12 xl:w-7/12 text-shadow">
+            <h1 class="mb-2 text-4xl font-semibold leading-none">
+              Step 2:</h1>
+            <p class="text-lg font-semibold tracking-wide ">J. Isaac
+              serves
+              our customers by providing construction owner
+              representation, professional
+              management and
+              consulting services. We manage construction and real estate development project in and around
+              Washington,
+              DC.
+            </p>
+          </article>
+        </div>
       </div>
       <div class="swiper-slide">
-        <!-- Scroll Magic Area Step 3 -->
-        <section>
-          <div class="flex flex-row-reverse flex-wrap items-center content-center h-screen text-right bg-top bg-cover"
-            style="background-image: url(./img/jipbm_residential_construction_project_management_0014.jpg)">
-            <article
-              class="float-right py-4 pl-4 pr-4 text-right transform -translate-x-4 -translate-y-1/2 xs:w-5/6 sm:w-5/6 md:w-7/12 xl:w-5/12 text-shadow">
-              <h3 class="mb-2 text-4xl font-semibold leading-none">
-                Step 3:</h3>
-              <p class="text-lg font-medium tracking-wide ">The
-                initiation
-                phase
-                is the beginning of the project. In this
-                phase, the idea for the project is explored and elaborated. The goal of this phase is to examine the
-                feasibility of the project.
-              </p>
-            </article>
-          </div>
-        </section>
+        <!-- Step 3 -->
+        <div class="flex flex-row-reverse flex-wrap items-center content-center h-screen text-right bg-top bg-cover"
+          style="background-image: url(./img/jipbm_residential_construction_project_management_0014.jpg)">
+          <article
+            class="float-right py-4 pl-4 pr-4 text-right transform -translate-x-4 -translate-y-1/2 xs:w-5/6 sm:w-5/6 md:w-7/12 xl:w-5/12 text-shadow">
+            <h3 class="mb-2 text-4xl font-semibold leading-none">
+              Step 3:</h3>
+            <p class="text-lg font-medium tracking-wide ">The
+              initiation
+              phase
+              is the beginning of the project. In this
+              phase, the idea for the project is explored and elaborated. The goal of this phase is to examine the
+              feasibility of the project.
+            </p>
+          </article>
+        </div>
       </div>
       <div class="swiper-slide">
-        <!-- Scroll Magic Area Step 4 -->
-        <section>
-          <div class="flex flex-row flex-wrap items-center content-center h-screen text-left bg-top bg-cover"
-            style="background-image: url(./img/jipbm_residential_construction_project_management_0018.jpg)">
-            <article
-              class="float-left pl-8 pr-8 text-left text-white xs:w-5/6 sm:w-5/6 md:w-7/12 xl:w-7/12 text-shadow">
-              <h1 class="mb-2 text-4xl font-semibold leading-none">
-                Step 4:</h1>
-              <p class="text-lg font-semibold tracking-wide ">J. Isaac
-                serves
-                our customers by providing construction owner
-                representation, professional
-                management and
-                consulting services. We manage construction and real estate development projects in and around
-                Washington,
-                DC.
-              </p>
-            </article>
-          </div>
-        </section>
+        <!-- Step 4 -->
+        <div class="flex flex-row flex-wrap items-center content-center h-screen text-left bg-top bg-cover"
+          style="background-image: url(./img/jipbm_residential_construction_project_management_0018.jpg)">
+          <article class="float-left pl-8 pr-8 text-left text-white xs:w-5/6 sm:w-5/6 md:w-7/12 xl:w-7/12 text-shadow">
+            <h1 class="mb-2 text-4xl font-semibold leading-none">
+              Step 4:</h1>
+            <p class="text-lg font-semibold tracking-wide ">J. Isaac
+              serves
+              our customers by providing construction owner
+              representation, professional
+              management and
+              consulting services. We manage construction and real estate development projects in and around
+              Washington,
+              DC.
+            </p>
+          </article>
+        </div>
       </div>
       <div class="swiper-slide">
-        <!-- Scroll Magic Area Step 5 -->
-        <section>
-          <div class="flex flex-row-reverse flex-wrap items-center content-center h-screen text-right bg-top bg-cover"
-            style="background-image: url(./img/jipbm_residential_construction_project_management_0025.jpg)">
-            <article
-              class="float-right py-4 pl-4 pr-4 text-right transform -translate-x-4 -translate-y-1/2 xs:w-5/6 sm:w-5/6 md:w-7/12 xl:w-5/12 text-shadow">
-              <h3 class="mb-2 text-4xl font-semibold leading-none">
-                Step 5:</h3>
-              <p class="text-lg font-medium tracking-wide ">The
-                initiation
-                phase
-                is the beginning of the project. In this
-                phase, the idea for the project is explored and elaborated. The goal of this phase is to examine the
-                feasibility of the project.
-              </p>
-            </article>
-          </div>
-        </section>
+        <!-- Step 5 -->
+        <div class="flex flex-row-reverse flex-wrap items-center content-center h-screen text-right bg-top bg-cover"
+          style="background-image: url(./img/jipbm_residential_construction_project_management_0025.jpg)">
+          <article
+            class="float-right py-4 pl-4 pr-4 text-right transform -translate-x-4 -translate-y-1/2 xs:w-5/6 sm:w-5/6 md:w-7/12 xl:w-5/12 text-shadow">
+            <h3 class="mb-2 text-4xl font-semibold leading-none">
+              Step 5:</h3>
+            <p class="text-lg font-medium tracking-wide ">The
+              initiation
+              phase
+              is the beginning of the project. In this
+              phase, the idea for the project is explored and elaborated. The goal of this phase is to examine the
+              feasibility of the project.
+            </p>
+          </article>
+        </div>
       </div>
       <div class="swiper-slide">
-        <!-- Scroll Magic Area Step 6 -->
-        <section>
-          <div class="flex flex-row flex-wrap items-center content-center h-screen text-left bg-top bg-cover"
-            style="background-image: url(./img/jipbm_residential_construction_project_management_0003.jpg)">
-            <article
-              class="float-left pl-8 pr-8 text-left text-white xs:w-5/6 sm:w-5/6 md:w-7/12 xl:w-7/12 text-shadow">
-              <h1 class="mb-2 text-4xl font-semibold leading-none">
-                Step 6: Project Closing</h1>
-              <p class="text-lg font-semibold tracking-wide ">J. Isaac
-                serves
-                our customers by providing construction owner
-                representation, professional
-                management and
-                consulting services. We manage construction and real estate development projects in and around
-                Washington,
-                DC.
-              </p>
-            </article>
-          </div>
-        </section>
+        <div class="flex flex-row flex-wrap items-center content-center h-screen text-left bg-top bg-cover"
+          style="background-image: url(./img/jipbm_residential_construction_project_management_0003.jpg)">
+          <article class="float-left pl-8 pr-8 text-left text-white xs:w-5/6 sm:w-5/6 md:w-7/12 xl:w-7/12 text-shadow">
+            <h1 class="mb-2 text-4xl font-semibold leading-none">
+              Step 6: Project Closing</h1>
+            <p class="text-lg font-semibold tracking-wide ">J. Isaac
+              serves
+              our customers by providing construction owner
+              representation, professional
+              management and
+              consulting services. We manage construction and real estate development projects in and around
+              Washington,
+              DC.
+            </p>
+          </article>
+        </div>
       </div>
 
     </div>
     <!-- Add Pagination -->
-    <div class=" swiper-pagination"></div>
+    <div class="swiper-pagination"></div>
   </div>
-  <!-- /Scroll Magic Area  -->
-
 
   <!-- Swiper JS -->
-  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="../package/js/swiper.min.js"></script>
 
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper('.swiper-container', {
-      direction: 'vertical',
-      slidesPerView: 1,
+      slidesPerView: 'auto',
       spaceBetween: 30,
-      mousewheel: true,
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -256,42 +280,79 @@
     });
   </script>
 
-  <section class="h-screen text-6xl text-black bg-white">
-    <h2>White Area</h2>
-  </section>
 
+
+  <!-- /End of Project Management Pitch Area  -->
+
+
+
+
+
+
+
+
+
+
+
+  <!-- White Gap Area  -->
+  <section>
+    <div class="h-screen bg-white ">
+      <span class="text-4xl text-black text-shadow">White Gap Area </span>
+    </div>
+
+    </div>
+
+  </section>
+  <!-- /End of White Gap Area  -->
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Portfolio Area  -->
   <!-- Swiper -->
   <div class="swiper-container">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <!-- Scroll Magic Area Step 1 -->
-        <section>
-          <div class="flex flex-row-reverse flex-wrap items-center content-center h-screen text-right bg-top bg-cover"
-            style="background-image: url(./img/jipbm_residential_construction_project_management_0010.jpg)">
-            <article
-              class="float-right py-4 pl-4 pr-4 text-right transform -translate-x-4 -translate-y-1/2 xs:w-5/6 sm:w-5/6 md:w-7/12 xl:w-5/12 text-shadow">
-              <h3 class="mb-2 text-4xl font-semibold leading-none">
-                Home Addition</h3>
-              <p class="text-lg font-medium tracking-wide ">The
-                initiation
-                phase
-                is the beginning of the project. In this
-                phase, the idea for the project is explored and elaborated. The goal of this phase is to examine the
-                feasibility of the project.
-              </p>
-            </article>
-          </div>
-        </section>
+        <div class="flex flex-row flex-wrap items-center content-center h-screen text-left bg-top bg-cover"
+          style="background-image: url(./img/jipbm_residential_construction_project_management_0003.jpg)">
+          <article class="float-left pl-8 pr-8 text-left text-white xs:w-5/6 sm:w-5/6 md:w-7/12 xl:w-7/12 text-shadow">
+            <h1 class="mb-2 text-4xl font-semibold leading-none">
+              Step 6: Project Closing</h1>
+            <p class="text-lg font-semibold tracking-wide ">J. Isaac
+              serves
+              our customers by providing construction owner
+              representation, professional
+              management and
+              consulting services. We manage construction and real estate development projects in and around
+              Washington,
+              DC.
+            </p>
+          </article>
+        </div>
+
       </div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      <div class="swiper-slide">Slide 4</div>
-      <div class="swiper-slide">Slide 5</div>
-      <div class="swiper-slide">Slide 6</div>
-      <div class="swiper-slide">Slide 7</div>
-      <div class="swiper-slide">Slide 8</div>
-      <div class="swiper-slide">Slide 9</div>
-      <div class="swiper-slide">Slide 10</div>
+      <div class="swiper-slide">
+        Slide 2
+      </div>
+      <div class="swiper-slide">
+        Slide 3
+      </div>
+      <div class="swiper-slide">
+        Slide 4
+      </div>
+      <div class="swiper-slide">
+        Slide 5
+      </div>
+      <div class="swiper-slide">
+        Slide 6
+      </div>
     </div>
     <!-- Add Pagination -->
     <div class="swiper-pagination"></div>
@@ -300,8 +361,9 @@
     <div class="swiper-button-prev"></div>
   </div>
 
+
   <!-- Swiper JS -->
-  <script src="../package/js/swiper.min.js"></script>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 
   <!-- Initialize Swiper -->
   <script>
@@ -322,57 +384,33 @@
       },
     });
   </script>
+  <!-- /End of Portfolio Area  -->
 
 
 
 
 
 
-  <!-- Footer --->
-  <nav class="relative flex flex-wrap items-center justify-between px-2 py-3 mb-3 bg-gray-500 navbar-expand-lg">
-    <div class="container flex flex-wrap items-center justify-between px-4 mx-auto">
-      <div class="relative flex justify-between w-full px-4 lg:w-auto lg:static lg:block lg:justify-start">
-        <a class="inline-block py-2 mr-4 text-sm font-bold leading-relaxed text-white uppercase whitespace-no-wrap"
-          href="#pablo">
-          Footer
-        </a>
-        <button
-          class="block px-3 py-1 text-xl leading-none text-white bg-transparent border border-transparent border-solid rounded outline-none cursor-pointer lg:hidden focus:outline-none"
-          type="button" onclick="toggleNavbar('example-collapse-navbar')">
-          <i class="fas fa-bars"></i>
-        </button>
-      </div>
-      <div class="items-center flex-grow hidden lg:flex" id="example-collapse-navbar">
-        <ul class="flex flex-col list-none lg:flex-row lg:ml-auto">
-          <li class="nav-item">
-            <a class="flex items-center px-3 py-2 text-xs font-bold leading-snug text-white uppercase hover:opacity-75"
-              href="#pablo">
-              <i class="text-lg text-white opacity-75 fab fa-facebook-square leading-lg"></i><span
-                class="ml-2">Share</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="flex items-center px-3 py-2 text-xs font-bold leading-snug text-white uppercase hover:opacity-75"
-              href="#pablo">
-              <i class="text-lg text-white opacity-75 fab fa-twitter leading-lg"></i><span class="ml-2">Tweet</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="flex items-center px-3 py-2 text-xs font-bold leading-snug text-white uppercase hover:opacity-75"
-              href="#pablo">
-              <i class="text-lg text-white opacity-75 fab fa-pinterest leading-lg"></i><span class="ml-2">Pin</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <script>
-    function toggleNavbar(collapseID) {
-      document.getElementById(collapseID).classList.toggle("hidden");
-      document.getElementById(collapseID).classList.toggle("flex");
-    }
-  </script>
+
+
+
+
+
+  <!-- Footer Area  -->
+  <!-- /End of Footer Area  -->
+
+
+
+
+
+
+
+
+
+
+
+  <!-- JavaScript Area  -->
+  <!-- /End of JavaScript Area  -->
 
 
 
@@ -389,21 +427,6 @@
 
 
 
-  <script src="https://unpkg.com/popper.js@1/dist/umd/popper.min.js"></script>
-  <script src="https://unpkg.com/tippy.js@4"></script>
-  <script>
-    //Init tooltips
-    tippy('.link', {
-      placement: 'bottom'
-    })
-  </script>
-
-
-
-
-
-
-  <!--Plugin JavaScript-->
 
 </body>
 
